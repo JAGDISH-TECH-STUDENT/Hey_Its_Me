@@ -71,9 +71,9 @@ const ContactForm: React.FC = () => {
     <section id="contact" className="contact" style={{ padding: '100px 0' }}>
       <div className="container" style={{ maxWidth: '800px', textAlign: 'center' }}>
         <div className="section-label" style={{ textAlign: 'center' }}>05 — {t.nav.contact}</div>
-        <h2 style={{ textAlign: 'center' }}>Let's work together</h2>
+        <h2 style={{ textAlign: 'center' }}>{t.contact.ctaTitle}</h2>
         <p style={{ color: 'var(--color-text-secondary)', fontSize: '18px', marginTop: '16px', maxWidth: '600px', margin: '0 auto 40px', lineHeight: 1.7 }}>
-          My inbox is always open. Whether you have a question, a project in mind, or just want to say hi — I'll do my best to get back to you.
+          {t.contact.ctaDescription}
         </p>
 
         <form onSubmit={handleSubmit} style={{

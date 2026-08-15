@@ -49,15 +49,15 @@ const About = () => {
         <div className="stats-grid">
           <div className="stat-box">
             <div className="stat-number">0+</div>
-            <div className="stat-label">Years Experience</div>
+            <div className="stat-label">{t.about.yearsExperience}</div>
           </div>
           <div className="stat-box">
             <div className="stat-number">4+</div>
-            <div className="stat-label">Projects Built</div>
+            <div className="stat-label">{t.about.projectsBuilt}</div>
           </div>
           <div className="stat-box">
             <div className="stat-number">37+</div>
-            <div className="stat-label">Technologies</div>
+            <div className="stat-label">{t.about.technologies}</div>
           </div>
         </div>
       </div>

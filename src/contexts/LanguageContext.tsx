@@ -4,12 +4,12 @@ import type { translations } from '../types';
 const en: translations = {
   nav: { home: 'Home', about: 'About', skills: 'Skills', experience: 'Experience', education: 'Education', projects: 'Projects', blog: 'Blog', testimonials: 'Testimonials', contact: 'Contact' },
   hero: { greeting: 'Hello, I\'m Jagdish', prefix: 'I\'m a', roles: ['Full Stack Developer', 'Software Developer'], viewWork: 'View My Work', contactMe: 'Contact Me' },
-  about: { title: 'About Me', description1: 'I\'m Jagdish, a passionate Computer Science student at GLA University with a strong focus on full-stack web development. I love building modern, performant, and user-friendly applications that solve real-world problems.', description2: 'My expertise spans across modern JavaScript frameworks, backend technologies, and database systems. I\'m always eager to learn new technologies and contribute to meaningful projects.', techStack: 'Tech Stack' },
-  contact: { title: 'Get In Touch', name: 'Name', email: 'Email', phone: 'Phone', location: 'Location', subject: 'Subject', message: 'Message', send: 'Send Message', sending: 'Sending...', success: 'Message sent successfully!', error: 'Failed to send. Please try again.' },
+  about: { title: 'About Me', description1: 'I\'m Jagdish, a passionate Computer Science student at GLA University with a strong focus on full-stack web development. I love building modern, performant, and user-friendly applications that solve real-world problems.', description2: 'My expertise spans across modern JavaScript frameworks, backend technologies, and database systems. I\'m always eager to learn new technologies and contribute to meaningful projects.', techStack: 'Tech Stack', yearsExperience: 'Years Experience', projectsBuilt: 'Projects Built', technologies: 'Technologies' },
+  contact: { title: 'Get In Touch', name: 'Name', email: 'Email', phone: 'Phone', location: 'Location', subject: 'Subject', message: 'Message', send: 'Send Message', sending: 'Sending...', success: 'Message sent successfully!', error: 'Failed to send. Please try again.', ctaTitle: 'Let\'s work together', ctaDescription: 'My inbox is always open. Whether you have a question, a project in mind, or just want to say hi — I\'ll do my best to get back to you.' },
   projects: { title: 'Featured Projects', launchApp: 'Launch App', viewLive: 'View Live' },
   skills: { title: 'Skills & Expertise', frontend: 'Frontend', backend: 'Backend', tools: 'Tools' },
   blog: { title: 'Latest Articles', readMore: 'Read More' },
-  experience: { title: 'Experience' },
+  experience: { title: 'Experience', whereIveWorked: 'Where I\'ve worked' },
   education: { title: 'Education' },
   testimonials: { title: 'Testimonials' }
 };
@@ -17,12 +17,12 @@ const en: translations = {
 const hi: translations = {
   nav: { home: 'होम', about: 'मेरे बारे में', skills: 'स्किल्स', experience: 'अनुभव', education: 'शिक्षा', projects: 'प्रोजेक्ट्स', blog: 'ब्लॉग', testimonials: 'प्रशंसापत्र', contact: 'सम्पर्क' },
   hero: { greeting: 'नमस्ते, मैं जगदीश हूं', prefix: 'मैं एक', roles: ['फुल-स्टैक डेवलपर हूँ', 'सॉफ्टवेयर डेवलपर हूँ'], viewWork: 'मेरा काम देखें', contactMe: 'संपर्क करें' },
-  about: { title: 'मेरे बारे में', description1: 'मैं जगदीश हूं, जीएलए यूनिवर्सिटी में कंप्यूटर साइंस का छात्र हूं और फुल-स्टैक वेब डेवलपमेंट में मेरी रुचि है। मुझे आधुनिक तकनीकों से वेब एप्लिकेशन बनाने में बहुत शौक है।', description2: 'मेरी विशेषज्ञता आधुनिक जावास्क्रिप्ट फ्रेमवर्क, बैकएंड तकनीक और डेटाबेस सिस्टम में है। मैं हमेशा नई तकनीकें सीखने और महत्वपूर्ण प्रोजेक्ट्स में योगदान देने के लिए उत्साही हूं।', techStack: 'तकनीक स्टैक' },
-  contact: { title: 'संपर्क करें', name: 'नाम', email: 'ईमेल', phone: 'फोन', location: 'स्थान', subject: 'विषय', message: 'संदेश', send: 'संदेश भेजें', sending: 'भेज रहे हैं...', success: 'संदेश सफलतापूर्वक भेजा गया!', error: 'भेजने में विफल। कृपया पुनः प्रयास करें।' },
+  about: { title: 'मेरे बारे में', description1: 'मैं जगदीश हूं, जीएलए यूनिवर्सिटी में कंप्यूटर साइंस का छात्र हूं और फुल-स्टैक वेब डेवलपमेंट में मेरी रुचि है। मुझे आधुनिक तकनीकों से वेब एप्लिकेशन बनाने में बहुत शौक है।', description2: 'मेरी विशेषज्ञता आधुनिक जावास्क्रिप्ट फ्रेमवर्क, बैकएंड तकनीक और डेटाबेस सिस्टम में है। मैं हमेशा नई तकनीकें सीखने और महत्वपूर्ण प्रोजेक्ट्स में योगदान देने के लिए उत्साही हूं।', techStack: 'तकनीक स्टैक', yearsExperience: 'सालों का अनुभव', projectsBuilt: 'बनाए गए प्रोजेक्ट्स', technologies: 'तकनीकें' },
+  contact: { title: 'संपर्क करें', name: 'नाम', email: 'ईमेल', phone: 'फोन', location: 'स्थान', subject: 'विषय', message: 'संदेश', send: 'संदेश भेजें', sending: 'भेज रहे हैं...', success: 'संदेश सफलतापूर्वक भेजा गया!', error: 'भेजने में विफल। कृपया पुनः प्रयास करें।', ctaTitle: 'आइए साथ काम करें', ctaDescription: 'मेरा इनबॉक्स हमेशा खुला रहता है। चाहे आपके कोई सवाल हो, कोई प्रोजेक्ट इन माइंड हो, या बस ही कहना हो - मैं जल्दी से जवाब दूंगा।' },
   projects: { title: 'फीचर्ड प्रोजेक्ट्स', launchApp: 'ऐप लॉन्च करें', viewLive: 'लाइव देखें' },
   skills: { title: 'स्किल्स और विशेषज्ञता', frontend: 'फ्रंटएंड', backend: 'बैकएंड', tools: 'टूल्स' },
   blog: { title: 'नवीनतम लेख', readMore: 'और पढ़ें' },
-  experience: { title: 'अनुभव' },
+  experience: { title: 'अनुभव', whereIveWorked: 'मैंने कहां काम किया' },
   education: { title: 'शिक्षा' },
   testimonials: { title: 'प्रशंसापत्र' }
 };

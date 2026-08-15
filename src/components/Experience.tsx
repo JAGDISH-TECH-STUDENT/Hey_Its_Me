@@ -18,7 +18,7 @@ const Experience = () => {
     <section id="experience" className="experience" style={{ padding: '100px 0' }}>
       <div className="container">
         <div className="section-label">04 — {t.nav.experience}</div>
-        <h2>Where I've worked</h2>
+        <h2>{t.experience.whereIveWorked}</h2>
         <div className="timeline">
           {experiences.map((exp, index) => (
             <div key={exp.id} className="timeline-item">

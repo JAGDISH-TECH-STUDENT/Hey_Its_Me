@@ -55,6 +55,9 @@ export interface translations {
     description1: string;
     description2: string;
     techStack: string;
+    yearsExperience: string;
+    projectsBuilt: string;
+    technologies: string;
   };
   contact: {
     title: string;
@@ -68,6 +71,8 @@ export interface translations {
     sending: string;
     success: string;
     error: string;
+    ctaTitle: string;
+    ctaDescription: string;
   };
   projects: {
     title: string;
@@ -86,6 +91,7 @@ export interface translations {
   };
   experience: {
     title: string;
+    whereIveWorked: string;
   };
   education: {
     title: string;
