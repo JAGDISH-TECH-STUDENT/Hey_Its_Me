@@ -23,9 +23,10 @@ const About = () => {
                 const target = e.target as HTMLImageElement;
                 if (target.parentElement) {
                   target.style.display = 'none';
-                  target.parentElement.innerHTML = `
-                    <div style="width:120px;height:120px;border-radius:16px;background:linear-gradient(135deg, var(--color-primary), var(--color-secondary));display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:48px;color:white;">👤</div>
-                  `;
+                  const fallback = document.createElement('div');
+                  fallback.style.cssText = 'width:120px;height:120px;border-radius:16px;background:linear-gradient(135deg, var(--color-primary), var(--color-secondary));display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:48px;color:white;';
+                  fallback.textContent = '👤';
+                  target.parentElement.insertBefore(fallback, target);
                 }
               }} />
               <h3>Jagdish</h3>
