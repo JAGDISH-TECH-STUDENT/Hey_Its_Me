@@ -1,17 +1,31 @@
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xqpzdajw';
 
 export async function sendEmail(formData: { name: string; email: string; subject: string; message: string }): Promise<boolean> {
   try {
-    const response = await fetch(`${API_URL}/api/send-email`, {
+    const formDataToSend = new FormData();
+    formDataToSend.append('name', formData.name);
+    formDataToSend.append('email', formData.email);
+    formDataToSend.append('subject', formData.subject);
+    formDataToSend.append('message', formData.message);
+    formDataToSend.append('_subject', formData.subject || 'New message from portfolio');
+    formDataToSend.append('_replyto', formData.email);
+    formDataToSend.append('_captcha', 'false');
+
+    const response = await fetch(FORMSPREE_ENDPOINT, {
       method: 'POST',
+      body: formDataToSend,
       headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(formData)
+        'Accept': 'application/json'
+      }
     });
 
-    const data = await response.json();
-    return response.ok && data.success;
+    if (response.ok) {
+      return true;
+    }
+
+    const errorData = await response.json().catch(() => ({}));
+    console.error('Formspree error:', response.status, errorData);
+    return false;
   } catch (error) {
     console.error('Error sending email:', error);
     return false;
