@@ -28,7 +28,7 @@ const Home: React.FC = () => {
           </h1>
 
           <div style={{ fontSize: 'clamp(24px, 4vw, 40px)', color: 'var(--color-text-secondary)', display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
-            <span>I am a</span>
+            <span>{t.hero.prefix}</span>
             <TypingText words={t.hero.roles} speed={100} deleteSpeed={50} pauseDuration={2000} />
             <span style={{ color: 'var(--color-primary)' }}>|</span>
           </div>
